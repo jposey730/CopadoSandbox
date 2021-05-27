@@ -1,4 +1,4 @@
-def grooveyScript
+def groovyScript
 
 pipeline{
     agent any
@@ -9,14 +9,14 @@ pipeline{
         stage("init"){
             steps{
                 script{
-                    grooveyScript = load "script.groovy"
+                    groovyScript = load "script.groovy"
                 }
             }
         }
         stage("build"){
             steps{
                 script{
-                    grooveyScript.buildFunction()
+                    groovyScript.buildFunction()
                 }
             }
         }
