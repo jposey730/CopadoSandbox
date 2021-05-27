@@ -1,10 +1,12 @@
 pipeline{
     agent any
-
+    environment{
+        NEW_VARIABLE = 'Graham'
+    }
     stages{
         stage("build"){
             steps{
-                echo 'building stage...'
+                echo '${NEW_VARIABLE} building stage...'
             }
         }
         stage("test"){
