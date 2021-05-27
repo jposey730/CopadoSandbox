@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                echo '${NEW_VARIABLE} building stage...'
+                echo "${NEW_VARIABLE} building stage..."
             }
         }
         stage("test"){
